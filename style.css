@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF8F0
+}
+.search-container{
+    padding: 2em;
+}
+#search-button{
+    margin-top: 1em;
+    background-color: aliceblue;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: none;
+    border-radius: 100px;
+    font-size: 1.50em;
+    cursor: pointer;
+}
+#search{
+    font-size: 2em;
+    height: 1.8em;
+    border: none;
+    border-radius: 20px;
+    margin-right: 15px;
+    padding: 30px;
+}
+input:focus {
+    outline: none; /* This removes the default browser outline */
+}
+.container{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: linear-gradient( 179.4deg,  rgba(33,150,243,1) 1.8%, rgba(22,255,245,0.60) 97.1% );
+}
+.weather-container{
+    background-color: #0077b6;
+    box-shadow: 0px 1px 21px 10px rgba(0,0,0,0.75);
+    padding: 1em;
+    border-radius: 20px;
+    height: 45em;
+}
+.weather-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-image img{
+    width: 16em;
+    height: 16em;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+@media screen and (max-width : 1440px) {
+    #search-button{
+        background-color: aliceblue;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 12px;
+        padding-bottom: 10px;
+        border: none;
+        border-radius: 100px;
+        font-size: 1.50em;
+        cursor: pointer;
+    }
+    #search{
+        font-size: 1rem;
+        border: none;
+        border-radius: 20px;
+        margin-right: 15px;
+        padding: 25px;
+    }
+    .weather-container{
+        background-color: #0077b6;
+        box-shadow: 0px 1px 21px 10px rgba(0,0,0,0.75);
+        padding: 1em;
+        border-radius: 20px;
+        height: 40em;
+    }
+    .weather-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .weather-image img{
+        width: 13em;
+        height: 13em;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4em;
+    }
+    .details #temperature{
+        margin-bottom: 0.1em;
+    }
+    .details #cityName{
+        margin-bottom: 0.3em;
+    }
+    .weather-details {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width : 425px) {
+    #search-button{
+        background-color: aliceblue;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 9px;
+        border: none;
+        border-radius: 100px;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    #search{
+        font-size: 1rem;
+        border: none;
+        border-radius: 20px;
+        margin-right: 15px;
+        padding: 20px;
+    }
+    .weather-container{
+        background-color: #0077b6;
+        box-shadow: 0px 1px 21px 10px rgba(0,0,0,0.75);
+        padding: 1em;
+        border-radius: 20px;
+        height: 35em;
+    }
+    .weather-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .weather-image img{
+        width: 10em;
+        height: 10em;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+    }
+    .details #temperature{
+        margin-bottom: 0.1em;
+    }
+    .details #cityName{
+        margin-bottom: 0.3em;
+    }
+    .weather-details {
+        display: flex;
+        justify-content: space-around;
+        font-size: 15px;
+    }
+}
+
+
+
